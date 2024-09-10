@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        
+        <section>
+            <h2>Add Task</h2>
+            <form id="addTaskForm">
+                <input type="text" id="taskTitle" placeholder="Enter task title" required>
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Update Task</h2>
+            <form id="updateTaskForm">
+                <input type="number" id="taskIdToUpdate" placeholder="Enter task ID" required>
+                <input type="text" id="newTaskTitle" placeholder="Enter new task title" required>
+                <button type="submit">Update Task</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Delete Task</h2>
+            <form id="deleteTaskForm">
+                <input type="number" id="taskIdToDelete" placeholder="Enter task ID" required>
+                <button type="submit">Delete Task</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Tasks</h2>
+            <ul id="taskList"></ul>
+        </section>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
