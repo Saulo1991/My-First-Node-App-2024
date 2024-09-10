@@ -15,7 +15,7 @@ export const connection = mysql.createConnection({
     host: 'localhost', 
     user: 'root',
     database: 'task_manager',
-    password: '1234'
+    password: '111111'
 });
 
 app.use(routes);
